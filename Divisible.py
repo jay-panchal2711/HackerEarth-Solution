@@ -1,17 +1,17 @@
-n = int(input())
-s = list(input().split())
+N = int(input())
+data = list(input().split())
 
-half = n/2
+half = N/2
 x = []
-for i in range(n):
+for i in range(N):
     if i < half:
-        x.append(s[i][0])
+        x.append(data[i][0])
     else:
-        x.append(s[i][-1:])
+        x.append(data[i][-1:])
 
 temp = ''.join(x)
 
-if (int(temp) % 11 == 0):
-    print("OUI")
+if (int(temp) % 10 == 0):
+    print("Yes")
 else:
-    print("NON")
+    print("No")
